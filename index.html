@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="static/plugin/bootstrap/css/bootstrap.min.css">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="static/plugin/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="static/plugin/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/plugin/swiper-bundle/swiper-bundle.min.css">
+    <!-- 自定义css文件 -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+<nav class="lw-md-show">
+    <div class="lw-container lw-header lw-posr ">
+        <div class="lw-logo lw-fl">
+            <a href="/">
+                <img src="/static/image/logo.png" alt="冷文的个人博客">
+            </a>
+        </div>
+        <span>让崇拜从这里开始，用代码做点好玩的事件，让每一天都变的充实起来!</span>
+        <div class="lw-fr lw-linkme">
+            <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-wechat" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-weibo" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <div class="lw-nav lw-posa">
+            <a href="/"><i class="fa fa-home" aria-hidden="true"></i>首页</a>
+            <a href="#">技术分享</a>
+            <a href="#">闲言碎语</a>
+            <a href="#">个人随笔</a>
+            <a href="#"><i class="fa fa-users" aria-hidden="true"></i>友情链接</a>
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i>关于我</a>
+            <a href="#"><i class="fa fa-edit" aria-hidden="true"></i>留言板</a>
+            <a href="javascript:void(0)" class="lw-fr lw-search-btn" style="padding: 0;">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+
+</nav>
+
+<div class="lw-md-hidden lw-phone-header">
+    <a href="javascript:void(0)" class="lw-posa lw-phone-topbtn lw-search-show lw-search-btn"><i
+            class="fa fa-search"></i></a>
+    <a class="lw-index" href="/"><h1>冷文学习者</h1></a>
+</div>
+<div class="lw-md-hidden" style="height: 100px;"></div>
+
+
+<div class="lw-container lw-main lw-posr">
+    <div class="lw-left-list">
+        <div class="swiper mySwiper lw-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide lw-posr">
+                    <img src="/static/image/banner/1.jpg" alt="" srcset="">
+                    <div class="lw-banner-info lw-posa">
+                        <a href="#"><h2 class="lw-text-hidden"><span class="label label-danger lw-mr5">站长推荐</span>Freewind
+                            一一typecho主题
+                        </h2></a>
+                        <p>仅700多k的体积，拥有相册、说说、时间轴、友链、更换配色等功能，了解更多请移步至官网查看...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide lw-posr">
+                    <img src="/static/image/banner/2.jpg" alt="" srcset="">
+                    <div class="lw-banner-info lw-posa">
+                        <a href="#"><h2 class="lw-text-hidden"><span class="label label-danger lw-mr5">站长推荐</span>Freewind主题编辑器功能
+                        </h2></a>
+                        <p>Freewind主题终于迎来了1.4的更新，同时也有了自己的编辑器，编辑器基于
+                            codemirror这款开源产品进行开发，同时也将编辑器抽出了一个项目，大家有兴趣可以参考...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide lw-posr">
+                    <img src="/static/image/banner/3.jpg" alt="" srcset="">
+                    <div class="lw-banner-info lw-posa">
+                        <a href="#"><h2 class="lw-text-hidden"><span class="label label-danger lw-mr5">站长推荐</span>冷文图床(腾讯COS)-个人版
+                        </h2></a>
+                        <p>一款基于腾讯COS的图床源码，采用java编写，有部署教程...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="lw-article-list">
+            <article class="lw-article-item lw-posr">
+                <div class="lw-article-cover lw-posa lw-xs-hidden">
+                    <img src="/static/image/1.jpg" alt="">
+                </div>
+                <div class="lw-article-info">
+                    <h2>
+                        <a class="lw-xs-hidden" href=""><span class="lw-category">Python相关</span></a>
+                        <a href="">Conda虚拟环境使用Conda虚拟环境使用Conda虚拟环境使用</a>
+                    </h2>
+                    <p class="lw-desc">Conda虚拟环境使用查看虚拟环境conda env list创建虚拟环境conda create -n
+                        [venvname]将[venvnConda虚拟环境使用查看虚拟环境conda env list创建虚拟环境conda create -n
+                        [venvname]将[venvnConda虚拟环境使用查看虚拟环境conda env list创建虚拟环境conda create -n
+                        [venvname]将[venvn...</p>
+                    <p class="lw-text-hidden lw-article-more"><i class="fa-regular fa-calendar-days lw-mr5"></i>2022-09-28
+                        12:00 <i
+                                class="fa-solid fa-eye lw-mr5 lw-ml10"></i>
+                        11283<i class="fa-solid fa-comment lw-ml10 lw-mr5"></i>9382</p>
+                </div>
+            </article>
+            <article class="lw-article-item lw-posr">
+                <div class="lw-article-cover lw-posa lw-xs-hidden">
+                    <img src="/static/image/2.jpg" alt="">
+                </div>
+                <div class="lw-article-info">
+                    <h2>
+                        <a class="lw-xs-hidden" href=""><span class="lw-category">个人随笔</span></a>
+                        <a href=""> 关于我这些年的经历</a></h2>
+                    <p class="lw-desc">
+                        人这一辈子那么有限，作为一个普通人，也许我穷极一生也不会有什么大的成就可以让外人为我写下一个传记。但是我可以用自己的手记录下我这一生，吃过的...</p>
+                    <p class="lw-text-hidden lw-article-more"><i class="fa-regular fa-calendar-days lw-mr5"></i>2022-09-28
+                        12:00 <i
+                                class="fa-solid fa-eye lw-mr5 lw-ml10"></i>
+                        11283<i class="fa-solid fa-comment lw-ml10 lw-mr5"></i>9382</p>
+                </div>
+            </article>
+            <article class="lw-article-item lw-posr">
+                <div class="lw-article-cover lw-posa lw-xs-hidden">
+                    <img src="/static/image/3.jpg" alt="">
+                </div>
+                <div class="lw-article-info">
+                    <h2><a class="lw-xs-hidden" href=""><span class="lw-category">技术学习</span></a>
+                        <a href=""> Spring Boot 3.0 M1 发布</a></h2>
+                    <p class="lw-desc">Spring Boot 3.0 M1 发布Spring Boot 3.0.0-M1Spring Boot
+                        近日发布了第一个里程碑版本：Spr...</p>
+                    <p class="lw-text-hidden lw-article-more"><i class="fa-regular fa-calendar-days lw-mr5"></i>2022-09-28
+                        12:00 <i
+                                class="fa-solid fa-eye lw-mr5 lw-ml10"></i>
+                        11283<i class="fa-solid fa-comment lw-ml10 lw-mr5"></i>9382</p>
+                </div>
+            </article>
+            <article class="lw-article-item lw-posr">
+                <div class="lw-article-cover lw-posa lw-xs-hidden">
+                    <img src="/static/image/4.jpg" alt="">
+                </div>
+                <div class="lw-article-info">
+                    <h2><a class="lw-xs-hidden" href=""><span class="lw-category">技术学习</span></a>
+                        <a href=""> 异步上传文件显示进度条</a></h2>
+                    <p class="lw-desc">
+                        异步上传文件显示进度条问题我们在写网站时难免会遇到需要上传文件的场景，但当上传大文件时比如5个G的文件直接用表单直接提交文件会出现页面卡顿、...</p>
+                    <p class="lw-text-hidden lw-article-more"><i class="fa-regular fa-calendar-days lw-mr5"></i>2022-09-28
+                        12:00 <i
+                                class="fa-solid fa-eye lw-mr5 lw-ml10"></i>
+                        11283<i class="fa-solid fa-comment lw-ml10 lw-mr5"></i>9382</p>
+                </div>
+            </article>
+            <article class="lw-article-item lw-posr">
+                <div class="lw-article-cover lw-posa lw-xs-hidden">
+                    <img src="/static/image/5.jpg" alt="">
+                </div>
+                <div class="lw-article-info">
+                    <h2><a class="lw-xs-hidden" href=""><span class="lw-category">技术学习</span></a>
+                        <a href=""> 纯 CSS 图片碎裂动画教程</a></h2>
+                    <p class="lw-desc">
+                        纯CSS图片碎裂动画教程前言最近看到一篇文章是关于css做图片销毁图片效果的，觉得不错，就给大家翻译过来分享一下，原文地址：传送门文章开始，...</p>
+                    <p class="lw-text-hidden lw-article-more"><i class="fa-regular fa-calendar-days lw-mr5"></i>2022-09-28
+                        12:00 <i
+                                class="fa-solid fa-eye lw-mr5 lw-ml10"></i>
+                        11283<i class="fa-solid fa-comment lw-ml10 lw-mr5"></i>9382</p>
+                </div>
+            </article>
+            <article class="lw-article-item lw-posr">
+                <div class="lw-article-cover lw-posa lw-xs-hidden">
+                    <img src="/static/image/1.jpg" alt="">
+                </div>
+                <div class="lw-article-info">
+                    <h2><a class="lw-xs-hidden" href=""><span class="lw-category">Typecho相关</span></a>
+                        <a href=""> Typecho设置多域名</a></h2>
+                    <p class="lw-desc">
+                        Typecho设置多域名前言typecho后台只能设置一个域名，但我们通常一个站点会有两域名(一个带www,一个不带的)，比如我在后台设置了...</p>
+                    <p class="lw-text-hidden lw-article-more"><i class="fa-regular fa-calendar-days lw-mr5"></i>2022-09-28
+                        12:00 <i
+                                class="fa-solid fa-eye lw-mr5 lw-ml10"></i>
+                        11283<i class="fa-solid fa-comment lw-ml10 lw-mr5"></i>9382</p>
+                </div>
+            </article>
+        </div>
+        <ul class="lw-pagenation">
+            <li><a href="">首页</a></li>
+            <li><a href="" class="lw-active">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">尾页</a></li>
+        </ul>
+    </div>
+    <div class="lw-right-list lw-md-show lw-posa">
+        <div class="lw-right-item lw-profile">
+            <div class="lw-avatar-content lw-posr"
+                 style="background-image:url(/static/image/5-120601094K3-50.gif);">
+                <div class="lw-avatar lw-posa">
+                    <img src="/static/image/avatar.jpeg" alt="">
+                </div>
+            </div>
+            <ul class="lw-info">
+                <li><span>博主</span>Mr丶冷文</li>
+                <li><span>坐标</span>北京 昌平</li>
+                <li><span>标签</span>Java、Web设计、Python、大数据、爬虫</li>
+            </ul>
+        </div>
+        <div class="lw-right-item lw-right-hot">
+            <h4><i class="fa fa-fire lw-mr5" aria-hidden="true"></i>热门文章</h4>
+            <ul class="lw-hot-list">
+                <li>
+                    <a href="#">
+                        <div class="lw-hot-img">
+                            <span class="label label-danger lw-posa">1</span>
+                            <img src="/static/image/1.jpg" alt="">
+                        </div>
+                        <p class="lw-hot-title">Freewind主题编辑器展示</p>
+                        <p class="lw-hot-info"><i class="fa-solid fa-fire-flame-curved"></i> 65580 </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="lw-hot-img">
+                            <span class="label label-warning lw-posa">2</span>
+                            <img src="/static/image/2.jpg" alt="">
+                        </div>
+                        <p class="lw-hot-title">Conda虚拟环境使用</p>
+                        <p class="lw-hot-info"><i class="fa-solid fa-fire-flame-curved"></i> 56283 </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="lw-hot-img">
+                            <span class="label label-info lw-posa">3</span>
+                            <img src="/static/image/3.jpg" alt="">
+                        </div>
+                        <p class="lw-hot-title">纯 CSS 图片碎裂动画教程</p>
+                        <p class="lw-hot-info"><i class="fa-solid fa-fire-flame-curved"></i> 52213 </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="lw-hot-img">
+                            <span class="label label-default lw-posa">4</span>
+                            <img src="/static/image/4.jpg" alt="">
+                        </div>
+                        <p class="lw-hot-title">Spring Boot 3.0 M1 发布</p>
+                        <p class="lw-hot-info"><i class="fa-solid fa-fire-flame-curved"></i> 23132 </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="lw-hot-img">
+                            <span class="label label-default lw-posa">5</span>
+                            <img src="/static/image/5.jpg" alt="">
+                        </div>
+                        <p class="lw-hot-title">异步上传文件显示进度条</p>
+                        <p class="lw-hot-info"><i class="fa-solid fa-fire-flame-curved"></i> 12322 </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="lw-right-item lw-tag-cloud">
+            <h4><i class="fa fa-tags lw-mr5" aria-hidden="true"></i>标签云</h4>
+
+            <a href="https://www.kevinlu98.cn/tag/freewind/" title="freewind">
+                freewind</a>
+            <a href="https://www.kevinlu98.cn/tag/typecho/" title="typecho">
+                typecho</a>
+            <a href="https://www.kevinlu98.cn/tag/%E6%8F%92%E4%BB%B6/" title="插件">
+                插件</a>
+            <a href="https://www.kevinlu98.cn/tag/emlog/" title="emlog">
+                emlog</a>
+            <a href="https://www.kevinlu98.cn/tag/java/" title="java">
+                java</a>
+            <a href="https://www.kevinlu98.cn/tag/%E4%B8%BB%E9%A2%98/" title="主题">
+                主题</a>
+            <a href="https://www.kevinlu98.cn/tag/%E8%87%AA%E7%94%B1%E4%B9%8B%E9%A3%8E/" title="自由之风">
+                自由之风</a>
+            <a href="https://www.kevinlu98.cn/tag/%E5%9B%BE%E5%BA%8A/" title="图床">
+                图床</a>
+            <a href="https://www.kevinlu98.cn/tag/%E5%86%B7%E6%96%87%E5%9B%BE%E5%BA%8A/" title="冷文图床">
+                冷文图床</a>
+            <a href="https://www.kevinlu98.cn/tag/markdown/" title="markdown">
+                markdown</a>
+            <a href="https://www.kevinlu98.cn/tag/gitee/" title="gitee">
+                gitee</a>
+            <a href="https://www.kevinlu98.cn/tag/springboot/" title="springboot">
+                springboot</a>
+            <a href="https://www.kevinlu98.cn/tag/linux/" title="linux">
+                linux</a>
+            <a href="https://www.kevinlu98.cn/tag/mac/" title="mac">
+                mac</a>
+            <a href="https://www.kevinlu98.cn/tag/%E5%AD%A6%E4%B9%A0/" title="学习">
+                学习</a>
+            <a href="https://www.kevinlu98.cn/tag/python/" title="python">
+                python</a>
+            <a href="https://www.kevinlu98.cn/tag/conda/" title="conda">
+                conda</a>
+            <a href="https://www.kevinlu98.cn/tag/%E7%9B%B8%E5%86%8C/" title="相册">
+                相册</a>
+            <a href="https://www.kevinlu98.cn/tag/jsDelivr/" title="jsDelivr">
+                jsDelivr</a>
+            <a href="https://www.kevinlu98.cn/tag/cdn/" title="cdn">
+                cdn</a>
+            <a href="https://www.kevinlu98.cn/tag/codemirror/" title="codemirror">
+                codemirror</a>
+            <a href="https://www.kevinlu98.cn/tag/freedom/" title="freedom">
+                freedom</a>
+            <a href="https://www.kevinlu98.cn/tag/%E8%85%BE%E8%AE%AFcos/" title="腾讯cos">
+                腾讯cos</a>
+            <a href="https://www.kevinlu98.cn/tag/cos/" title="cos">
+                cos</a>
+            <a href="https://www.kevinlu98.cn/tag/%E7%A7%81%E4%BA%BA%E5%9B%BE%E5%BA%8A/" title="私人图床">
+                私人图床</a>
+            <a href="https://www.kevinlu98.cn/tag/%E6%AC%A2%E8%BF%8E%E9%A1%B5/" title="欢迎页">
+                欢迎页</a>
+            <a href="https://www.kevinlu98.cn/tag/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C/" title="登录注册">
+                登录注册</a>
+            <a href="https://www.kevinlu98.cn/tag/%E6%95%99%E7%A8%8B%E4%B8%8B%E8%BD%BD/" title="教程下载">
+                教程下载</a>
+            <a href="https://www.kevinlu98.cn/tag/itjc8/" title="itjc8">
+                itjc8</a>
+            <a href="https://www.kevinlu98.cn/tag/%E8%99%9A%E6%8B%9F%E6%9C%BA/" title="虚拟机">
+                虚拟机</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="lw-friend-link">
+    <div class="lw-container">
+        <h2>友情链接</h2>
+        <a href="">冷文学习者</a>
+        <a href="">冷文博客</a>
+        <a href="">冷文聊编程</a>
+        <a href="">GetHub</a>
+        <a href="">CSDN</a>
+        <a href="">百度一下</a>
+        <a href="">新浪微博</a>
+        <a href="">谷歌搜索</a>
+        <a href="">知乎</a>
+        <a href="">掘金</a>
+    </div>
+</div>
+
+<footer>
+    <p>冷文学习者 版权所有 <span class="lw-mr5"></span>Copyright © www.kevinlu98.cn All Rights Reserved.</p>
+    <p>备案号：陕ICP备19024566-1号 京公网安备 11011402012109号</p>
+</footer>
+
+<div class="lw-mask" id="lw-search-box">
+    <div class="lw-search-conetnt">
+        <a href="javascript:void(0)" class="lw-search-close lw-posa"><i class="fa fa-close"></i></a>
+        <div class="lw-search-input lw-posr">
+            <form action="" method="post">
+                <input type="text" placeholder="请输入搜索关键字...">
+                <button class="lw-posa"><i class="fa fa-search lw-mr5"></i>搜索</button>
+            </form>
+        </div>
+        <p>推荐关键字：
+            <a href="javascript:void (0)">独立下载</a>
+            <a href="javascript:void (0)">评论通知</a>
+            <a href="javascript:void (0)">点赞</a>
+            <a href="javascript:void (0)">非插件</a>
+            <a href="javascript:void (0)">tp5</a>
+            <a href="javascript:void (0)">ajax</a>
+            <a href="javascript:void (0)">json</a>
+            <a href="javascript:void (0)">IO模型</a>
+            <a href="javascript:void (0)">跨域</a>
+            <a href="javascript:void (0)">javascript</a>
+            <a href="javascript:void (0)">springboot</a>
+            <a href="javascript:void (0)">视频剪辑</a>
+            <a href="javascript:void (0)">后期</a>
+            <a href="javascript:void (0)">个人随笔</a>
+        </p>
+    </div>
+</div>
+
+<script src="static/plugin/jquery/jquery-3.5.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="static/plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/plugin/swiper-bundle/swiper-bundle.min.js"></script>
+<script src="static/js/main.js"></script>
+<script>
+    $(function () {
+        new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+            loop: true,
+            autoplay: true
+        });
+    })
+</script>
+</body>
+</html>
